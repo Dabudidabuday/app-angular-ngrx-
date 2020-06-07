@@ -1,0 +1,20 @@
+<h1>Let`s Count!</h1>
+
+
+<div class="count-box">
+    <h3>Count: {{ count }}</h3>
+
+    <button class="btn btn-less" (click)="decrease()">Less</button>
+    <button class="btn btn-more" (click)="increase()">More</button>
+
+    <p>с помощью переменной count и двух функций incr и decr </p>
+</div>
+
+
+<div class="count-box">
+    <h3>Count: {{ count$ | async }}</h3>
+
+    <button class="btn btn-less" (click)="decrement()">Less</button>
+    <button class="btn btn-more" (click)="increment()">More</button>
+    <button class="btn btn-reset" (click)="reset()">Reset</button>
+</div>

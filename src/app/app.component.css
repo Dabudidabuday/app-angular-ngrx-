@@ -1,0 +1,55 @@
+.start-counter-btn {
+    display: block;
+    margin: 50px auto;
+}
+
+button {
+    padding: 10px 20px;
+    text-transform: capitalize; 
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+    border: 2px solid #eee;
+    border-radius: 4px;
+    outline:none;
+}
+
+button:active {
+    background-color: darkred;
+    transition: ease-in-out .1s;
+}
+
+input {
+    display: block;
+    margin: 20px;
+    padding: 15px 20px;
+    background-color: #eee;
+    border-radius: 8px;
+}
+
+.event-counter {
+    margin: 40px;
+}
+
+.event-counter p {
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.box {
+    margin: 5px;
+    display: inline-block;
+    border: 2px solid #eee;
+    width: 50px;
+    height: 50px;
+}
+
+.red-box {
+    background-color: red;
+}
+
+h1, p {
+    font-size: 40px;
+    color: #000;
+}
