@@ -8,11 +8,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { StoreModule } from '@ngrx/store';
 import { counterReducer } from './counter/counter.reducer';
 
-const appRoutes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'counter', component: CounterComponent },
+// const appRoutes: Routes = [
+//   { path: '', component: AppComponent },
+//   { path: 'counter', component: CounterComponent },
 
-]
+// ]
 @NgModule({
 
   declarations: [
@@ -25,7 +25,8 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     StoreModule.forRoot({ count : counterReducer }),
-    RouterModule.forRoot(appRoutes),
+    // RouterModule.forRoot(appRoutes),
+    // AppRouterModule
   ],
 
   providers: [],

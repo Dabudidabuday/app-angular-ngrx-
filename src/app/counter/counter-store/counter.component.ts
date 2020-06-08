@@ -25,7 +25,7 @@ export class CounterComponent implements OnInit {
     this.counter = 0;
   }
 
-  count$: Observable<number>;
+  count$ = new Observable<number>();
 
 
   constructor(private store: Store<AppState>) {
