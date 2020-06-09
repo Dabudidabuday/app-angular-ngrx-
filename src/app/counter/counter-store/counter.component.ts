@@ -1,30 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
-import { increment, decrement, reset } from './counter.actions';
-import { AppState } from '../app.state';
+import { AppState } from 'src/app/app.state';
+import { increment, decrement, reset } from '../store/counter.actions';
 
 @Component({
-  selector: 'app-counter',
+  selector: 'counter-store',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
-export class CounterComponent implements OnInit {
-  
-  counter:number = 0;
 
-  increase() : void {
-    this.counter++
-  };
-
-  decrease() : void {
-    this.counter--
-  };
-
-  zero() : void {
-    this.counter = 0;
-  }
-
+export class CounterStoreComponent implements OnInit {
   count$ = new Observable<number>();
 
 
