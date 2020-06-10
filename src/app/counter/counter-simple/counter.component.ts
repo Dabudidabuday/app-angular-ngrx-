@@ -3,7 +3,7 @@ import { Store, select } from '@ngrx/store';
 import { Observable } from 'rxjs';
 
 @Component({
-  selector: 'app-counter',
+  selector: 'counter-simple',
   templateUrl: './counter.component.html',
   styleUrls: ['./counter.component.css']
 })
