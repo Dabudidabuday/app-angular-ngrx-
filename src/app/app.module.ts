@@ -12,7 +12,6 @@ import { CounterModule } from './counter/counter.module';
 
   declarations: [
     AppComponent,
-    CounterComponent,
 
   ],
 
@@ -20,7 +19,6 @@ import { CounterModule } from './counter/counter.module';
     BrowserModule,
     StoreModule.forRoot({ count : counterReducer }),
     AppRoutingModule,
-    CounterModule
   ],
 
   providers: [],

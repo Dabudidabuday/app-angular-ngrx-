@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 
 export const appRoutes: Routes = [
     { path: '', component: AppComponent },
-    { path: 'counter', component: CounterComponent },
+    { path: 'counter', loadChildren: () => import('./counter/counter.module').then(m => m.CounterModule) },
   
 ];
 

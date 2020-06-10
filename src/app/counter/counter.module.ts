@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 import { CounterSimpleComponent } from './counter-simple/counter.component';
 import { CounterStoreComponent } from './counter-store/counter.component';
 import { RouterModule } from '@angular/router';
-import { counterRoutes } from './counter-routing.module';
+import { CounterRoutingModule } from './counter-routing.module';
+import { CounterComponent } from './counter.component';
 
 @NgModule({
-    declarations: [CounterStoreComponent, CounterSimpleComponent],
+    declarations: [CounterComponent, CounterStoreComponent, CounterSimpleComponent ],
 
     imports: [
         CommonModule,
-        RouterModule.forRoot(counterRoutes),
+        CounterRoutingModule
     ]
 })
 
