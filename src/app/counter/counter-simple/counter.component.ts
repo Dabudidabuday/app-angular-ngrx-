@@ -1,7 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Store, select } from '@ngrx/store';
-import { Observable } from 'rxjs';
-
 @Component({
   selector: 'counter-simple',
   templateUrl: './counter.component.html',
